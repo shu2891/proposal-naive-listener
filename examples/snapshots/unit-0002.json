@@ -1,0 +1,76 @@
+{
+  "unit": 2,
+  "retelling": "我以為進場後先填問卷，由問卷決定我的木偶角色。接著 AI 會演出這個木偶，我當導演，給它表演指令；所以試鏡時實際演出的是 AI。",
+  "state": "clear",
+  "state_reason": "現在能說清楚問卷、角色、AI 和我的關係，也知道試鏡時雙方各自做什麼。",
+  "knowledge": [
+    {
+      "claim": "這段介紹的活動叫「木偶劇場」。",
+      "basis": "inferred",
+      "evidence": [
+        {"unit": 1, "channel": "visible", "anchor": "木偶劇場。"}
+      ],
+      "rationale": "開頭的名稱看起來是在介紹接下來的活動。"
+    },
+    {
+      "claim": "進場後，參加者先填問卷，再接受 AI 的試鏡。",
+      "basis": "explicit",
+      "evidence": [
+        {"unit": 1, "channel": "visible", "anchor": "你先填一份問卷，再接受 AI 的試鏡。"}
+      ],
+      "rationale": "第一段直接說明流程順序。"
+    },
+    {
+      "claim": "問卷會決定參加者的木偶角色。",
+      "basis": "explicit",
+      "evidence": [
+        {"unit": 2, "channel": "visible", "anchor": "問卷會決定你的木偶角色。"}
+      ],
+      "rationale": "這段直接交代角色由哪個步驟決定。"
+    },
+    {
+      "claim": "試鏡時，AI 演出參加者的木偶，參加者擔任導演並下達表演指令。",
+      "basis": "explicit",
+      "evidence": [
+        {"unit": 2, "channel": "visible", "anchor": "AI 演出你的木偶，而你擔任導演，對它下達表演指令。"}
+      ],
+      "rationale": "文字直接說明 AI 與參加者各自的行動。"
+    },
+    {
+      "claim": "表演指令如何下達、木偶以什麼方式呈現，以及試鏡後的安排，目前還不知道。",
+      "basis": "unknown",
+      "evidence": [],
+      "rationale": "目前交代了角色分工，尚未交代操作方式、呈現方式與後續流程。"
+    }
+  ],
+  "expectations": [
+    "我預期接下來會說明怎麼給 AI 表演指令，以及試鏡後會做什麼；這只是我的預期。"
+  ],
+  "assumptions": [],
+  "questions": [
+    {
+      "question": "我要用說話、打字，還是其他方式下達表演指令？",
+      "kind": "detail",
+      "why": "知道自己要當導演，但還不知道怎麼操作。",
+      "ask_now": false
+    },
+    {
+      "question": "試鏡結束後會發生什麼？",
+      "kind": "detail",
+      "why": "目前流程只交代到試鏡。",
+      "ask_now": false
+    }
+  ],
+  "events": [
+    {
+      "type": "revision",
+      "explanation": "第 1 段我猜試鏡可能是在看我適合扮演什麼角色。這段明說角色由問卷決定，試鏡時 AI 演出木偶、我擔任導演，因此我不再把自己理解成試鏡中的表演者。",
+      "related_units": [1, 2]
+    },
+    {
+      "type": "repair",
+      "explanation": "第 1 段不知道試鏡時自己要做什麼；這段用「你擔任導演，對它下達表演指令」說明了我的行動，具體下令方式仍待補充。",
+      "related_units": [1, 2]
+    }
+  ]
+}

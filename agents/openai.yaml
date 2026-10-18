@@ -1,0 +1,4 @@
+interface:
+  display_name: "提案陌生聽眾"
+  short_description: "逐頁追蹤陌生聽眾的理解、猜測與斷點，保留證據及後續修復紀錄"
+  default_prompt: "請使用 $proposal-naive-listener，逐頁閱讀我的提案，記錄當下理解、猜測、疑問與可能的理解斷點。"

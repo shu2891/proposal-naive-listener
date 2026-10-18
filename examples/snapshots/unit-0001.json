@@ -1,0 +1,61 @@
+{
+  "unit": 1,
+  "retelling": "我以為這是一個叫「木偶劇場」的活動。我進場後會先填問卷，再接受 AI 的試鏡，但還不知道試鏡時要做什麼，或之後會發生什麼。",
+  "state": "provisional",
+  "state_reason": "目前知道進場後的兩個步驟，能理解流程順序；參加者的角色與試鏡目的還沒交代。",
+  "knowledge": [
+    {
+      "claim": "這段介紹的活動叫「木偶劇場」。",
+      "basis": "inferred",
+      "evidence": [
+        {"unit": 1, "channel": "visible", "anchor": "木偶劇場。"}
+      ],
+      "rationale": "開頭的名稱看起來是在介紹接下來的活動。"
+    },
+    {
+      "claim": "進場後，參加者先填一份問卷，再接受 AI 的試鏡。",
+      "basis": "explicit",
+      "evidence": [
+        {"unit": 1, "channel": "visible", "anchor": "進場後，你先填一份問卷，再接受 AI 的試鏡。"}
+      ],
+      "rationale": "文字直接說明步驟與先後順序。"
+    },
+    {
+      "claim": "試鏡可能是在看參加者適合扮演什麼角色。",
+      "basis": "assumed",
+      "evidence": [],
+      "rationale": "這是我對劇場與試鏡的日常聯想，文字沒有說明選角目的。"
+    },
+    {
+      "claim": "AI 怎麼試鏡、參加者要做什麼，以及試鏡後的安排，目前都不知道。",
+      "basis": "unknown",
+      "evidence": [],
+      "rationale": "目前只交代會接受試鏡。"
+    }
+  ],
+  "expectations": [
+    "我預期接下來會說明試鏡要做什麼，以及試鏡後怎麼參與木偶劇場；這只是我的預期。"
+  ],
+  "assumptions": [
+    {
+      "text": "我猜試鏡是在看我適合扮演什麼角色。",
+      "impact": "可能讓我以為自己是待選的表演者，並期待之後會分配角色。"
+    }
+  ],
+  "questions": [
+    {
+      "question": "接受 AI 試鏡時，我實際要做什麼？",
+      "kind": "detail",
+      "why": "知道有這個步驟，但還不知道如何進行。",
+      "ask_now": false
+    },
+    {
+      "question": "試鏡是為了選角色、決定能不能參加，還是有其他用途？",
+      "kind": "ambiguity",
+      "why": "試鏡這個詞讓我想到選角，但目前沒有說明結果會用在哪裡。",
+      "ask_now": false,
+      "alternatives": ["分配角色", "決定參加資格", "其他尚未說明的用途"]
+    }
+  ],
+  "events": []
+}

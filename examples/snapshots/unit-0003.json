@@ -1,0 +1,88 @@
+{
+  "unit": 3,
+  "retelling": "我剛以為 AI 演木偶、我當導演下指令，現在卻聽到 AI 只當評審，而且玩家全程不能下指令。我不知道試鏡時到底誰演出，也不知道我實際能做什麼。",
+  "state": "blocked",
+  "state_reason": "這段與上一段對 AI 的角色、玩家能否下達表演指令有直接衝突，讓我無法建立一致的試鏡流程。",
+  "knowledge": [
+    {
+      "claim": "這段介紹的活動叫「木偶劇場」。",
+      "basis": "inferred",
+      "evidence": [
+        {"unit": 1, "channel": "visible", "anchor": "木偶劇場。"}
+      ],
+      "rationale": "開頭的名稱看起來是在介紹接下來的活動。"
+    },
+    {
+      "claim": "進場後，參加者先填問卷，再接受 AI 的試鏡。",
+      "basis": "explicit",
+      "evidence": [
+        {"unit": 1, "channel": "visible", "anchor": "你先填一份問卷，再接受 AI 的試鏡。"}
+      ],
+      "rationale": "第一段直接說明流程順序。"
+    },
+    {
+      "claim": "問卷會決定參加者的木偶角色。",
+      "basis": "explicit",
+      "evidence": [
+        {"unit": 2, "channel": "visible", "anchor": "問卷會決定你的木偶角色。"}
+      ],
+      "rationale": "第二段直接說明問卷的用途。"
+    },
+    {
+      "claim": "第二段說，試鏡時 AI 演出木偶，參加者擔任導演並下達表演指令。",
+      "basis": "explicit",
+      "evidence": [
+        {"unit": 2, "channel": "visible", "anchor": "AI 演出你的木偶，而你擔任導演，對它下達表演指令。"}
+      ],
+      "rationale": "保留上一段明說的分工，但它與本段內容衝突。"
+    },
+    {
+      "claim": "第三段說，AI 不是演員，只是評審，而且玩家全程不能下達表演指令。",
+      "basis": "explicit",
+      "evidence": [
+        {"unit": 3, "channel": "visible", "anchor": "AI 不是演員，它只是評審。玩家全程不能下達表演指令。"}
+      ],
+      "rationale": "這段直接說明另一套角色與行動限制。"
+    },
+    {
+      "claim": "這段的「玩家」應該指前面進場、填問卷的參加者。",
+      "basis": "inferred",
+      "evidence": [
+        {"unit": 1, "channel": "visible", "anchor": "進場後，你先填一份問卷"},
+        {"unit": 3, "channel": "visible", "anchor": "玩家全程不能下達表演指令"}
+      ],
+      "rationale": "內容連續介紹同一活動，沒有另外介紹其他參與者。"
+    },
+    {
+      "claim": "AI 最終負責演出還是評審、誰演出木偶，以及玩家實際能做什麼，目前無法確定。",
+      "basis": "unknown",
+      "evidence": [],
+      "rationale": "已揭露的兩段對核心分工給出互相衝突的說法，尚未解釋如何相容或哪一段被更正。"
+    }
+  ],
+  "expectations": [
+    "我預期接下來會解釋這兩段分工為什麼不同，讓我知道實際流程；這只是我的預期。"
+  ],
+  "assumptions": [],
+  "questions": [
+    {
+      "question": "AI 到底是演出木偶，還是只負責評審？如果只當評審，誰來演出？",
+      "kind": "blocker",
+      "why": "兩段對 AI 的角色直接衝突，影響我理解誰在做什麼。",
+      "ask_now": false
+    },
+    {
+      "question": "我到底要下達表演指令，還是全程不能下達？",
+      "kind": "blocker",
+      "why": "上一段要求我當導演下指令，這段卻禁止同一行動，讓我不知道如何參與。",
+      "ask_now": false
+    }
+  ],
+  "events": [
+    {
+      "type": "break",
+      "explanation": "第二段的「AI 演出你的木偶」與第三段的「AI 不是演員，它只是評審」衝突；第二段的「對它下達表演指令」也與第三段的「玩家全程不能下達表演指令」衝突。這影響核心角色與行動，目前沒有資訊能解開。",
+      "related_units": [2, 3]
+    }
+  ]
+}
